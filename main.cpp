@@ -2,7 +2,7 @@
 
 class Woodcutting {
 private:
-    const double LOG{25};
+    const int LOG{25};
     const double OAK_LOG{37.5};
     const double WILLOW_LOG{67.5};
 public:
@@ -11,7 +11,26 @@ public:
         int oak_logs_needed = static_cast<int>(std::ceil(xp / OAK_LOG));
         int willow_logs_needed = static_cast<int>(std::ceil(xp / WILLOW_LOG));
         std::cout <<
-            "You would need:\n"
+            "You would need ot chop:\n"
+            "\t" << logs_needed << " more logs\n"
+            "\t" << oak_logs_needed << " more oak logs\n"
+            "\t" << willow_logs_needed << " more willow logs\n"
+            "to level up. Happy grinding!\n";
+    }
+};
+
+class Firemaking {
+private:
+    const int LOG{40};
+    const int OAK_LOG{60};
+    const int WILLOW_LOG{90};
+public:
+    void calculate(int xp) {
+        int logs_needed = xp / LOG;
+        int oak_logs_needed = xp / OAK_LOG;
+        int willow_logs_needed = xp / WILLOW_LOG;
+        std::cout <<
+            "You would need to burn:\n"
             "\t" << logs_needed << " more logs\n"
             "\t" << oak_logs_needed << " more oak logs\n"
             "\t" << willow_logs_needed << " more willow logs\n"
@@ -47,9 +66,11 @@ int main() {
             skill.calculate(more_xp);
             break;
         }
-        case 2:
-            firemaking(more_xp);
+        case 2: {
+            Firemaking skill;
+            skill.calculate(more_xp);
             break;
+        }
         default:
             std::cout << "Not a valid skill choice!\n";
             break;
