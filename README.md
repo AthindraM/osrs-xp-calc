@@ -2,14 +2,14 @@
 A simple CLI calculator for the MMORPG Old School Runescape.
 ## Features
 ### Supported Skills
-    - Woodcutting
-    - Firemaking
+- Woodcutting
+- Firemaking
 ### In development
-    - Fishing
+- Fishing
 ### Coming Soon
-    - Attack
-    - Strength
-    - Defense
-    - Cooking
-    - Smithing
-    - Mining
+- Attack
+- Strength
+- Defense
+- Cooking
+- Smithing
+- Mining
