@@ -1,4 +1,4 @@
-#include "firemaking.hpp"
+#include "../../include/skills/firemaking.hpp"
 #include <iostream>
 #include <cmath>
 

@@ -1,4 +1,4 @@
-#include "mining.hpp"
+#include "../../include/skills/mining.hpp"
 #include <iostream>
 #include <cmath>
 

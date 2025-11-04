@@ -1,7 +1,7 @@
 #include <iostream>
-#include "woodcutting.hpp"
-#include "firemaking.hpp"
-#include "mining.hpp"
+#include "../include/skills/woodcutting.hpp"
+#include "../include/skills/firemaking.hpp"
+#include "../include/skills/mining.hpp"
 
 int main() {
     std::cout <<
