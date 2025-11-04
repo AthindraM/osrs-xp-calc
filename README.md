@@ -5,11 +5,17 @@ A simple CLI calculator for the MMORPG Old School Runescape.
 - Woodcutting
 - Firemaking
 ### In development
-- Fishing
+- Mining
 ### Coming Soon
 - Attack
 - Strength
 - Defense
-- Cooking
+- Ranged
+- Prayer
+- Magic
+- Runecraft
+- Hitpoints
+- Crafting
 - Smithing
-- Mining
+- Fishing
+- Cooking
