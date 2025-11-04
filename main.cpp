@@ -9,6 +9,7 @@ private:
     const int YEW_LOG{175};
     const int MAGIC_LOG{250};
     const int REDWOOD_LOG{380};
+
 public:
     void calculate(int xp) {
         int logs_needed = xp / LOG;
@@ -18,8 +19,8 @@ public:
         int yew_logs_needed = xp / YEW_LOG;
         int magic_logs_needed = xp / MAGIC_LOG;
         int redwood_logs_needed = xp / REDWOOD_LOG;
-        std::cout <<
-            "You would need to chop:\n"
+
+        std::cout << "You would need to chop:\n"
             "\t" << logs_needed << " more logs\n"
             "\t" << oak_logs_needed << " more oak logs\n"
             "\t" << willow_logs_needed << " more willow logs\n"
@@ -58,8 +59,8 @@ public:
         int blisterwood_logs_needed = xp / BLISTERWOOD_LOG;
         int magic_logs_needed = static_cast<int>(std::ceil(xp / MAGIC_LOG));
         int redwood_logs_needed = xp / REDWOOD_LOG;
-        std::cout <<
-            "You would need to burn:\n"
+
+        std::cout << "You would need to burn:\n"
             "\t" << logs_needed << " more logs\n"
             "\t" << oak_logs_needed << " more oak logs\n"
             "\t" << willow_logs_needed << " more willow logs\n"
@@ -75,6 +76,29 @@ public:
     }
 };
 
+class Mining {
+private:
+    const int CLAY{5};
+    const int RUNE_ESSENCE{5};
+    const double COPPER{17.5};
+    const double TIN{17.5};
+
+public:
+    void calculate(int xp) {
+        int clay_needed = xp / CLAY;
+        int rune_essence_needed = xp / RUNE_ESSENCE;
+        int copper_needed = static_cast<int>(std::ceil(xp / COPPER));
+        int tin_needed = static_cast<int>(std::ceil(xp / TIN));
+
+        std::cout << "You would need to mine:\n"
+            "\t" << clay_needed << " more clay\n"
+            "\t" << rune_essence_needed << " more rune essence\n"
+            "\t" << copper_needed << " more copper\n"
+            "\t" << tin_needed << " more tin\n"
+            "to level up. Happy grinding!\n";
+    }
+};
+
 int main() {
     std::cout <<
         "============================================\n"
@@ -85,6 +109,7 @@ int main() {
             "What skill would you like to calculate?\n"
             "\t[1] Woodcutting\n"
             "\t[2] Firemaking\n"
+            "\t[3] Mining\n"
             "\t(more skills coming soon!)\n";
     int skill_choice{};
     std::cin >> skill_choice;
@@ -101,6 +126,11 @@ int main() {
         }
         case 2: {
             Firemaking skill;
+            skill.calculate(more_xp);
+            break;
+        }
+        case 3: {
+            Mining skill;
             skill.calculate(more_xp);
             break;
         }
