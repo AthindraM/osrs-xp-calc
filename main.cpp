@@ -1,29 +1,7 @@
 #include <iostream>
 #include "woodcutting.hpp"
 #include "firemaking.hpp"
-
-class Mining {
-private:
-    const int CLAY{5};
-    const int RUNE_ESSENCE{5};
-    const double COPPER{17.5};
-    const double TIN{17.5};
-
-public:
-    void calculate(int xp) {
-        int clay_needed = xp / CLAY;
-        int rune_essence_needed = xp / RUNE_ESSENCE;
-        int copper_needed = static_cast<int>(std::ceil(xp / COPPER));
-        int tin_needed = static_cast<int>(std::ceil(xp / TIN));
-
-        std::cout << "You would need to mine:\n"
-            "\t" << clay_needed << " more clay\n"
-            "\t" << rune_essence_needed << " more rune essence\n"
-            "\t" << copper_needed << " more copper\n"
-            "\t" << tin_needed << " more tin\n"
-            "to level up. Happy grinding!\n";
-    }
-};
+#include "mining.hpp"
 
 int main() {
     std::cout <<

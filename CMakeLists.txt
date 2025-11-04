@@ -7,4 +7,6 @@ add_executable(OSRS_XP_Calc main.cpp
         woodcutting.hpp
         woodcutting.cpp
         firemaking.hpp
-        firemaking.cpp)
+        firemaking.cpp
+        mining.cpp
+        mining.hpp)
