@@ -2,6 +2,7 @@
 #include "../include/skills/woodcutting.hpp"
 #include "../include/skills/firemaking.hpp"
 #include "../include/skills/mining.hpp"
+#include "../include/skills/prayer.hpp"
 
 int main() {
     std::cout <<
@@ -14,6 +15,7 @@ int main() {
             "\t[1] Woodcutting\n"
             "\t[2] Firemaking\n"
             "\t[3] Mining\n"
+            "\t[4] Prayer\n"
             "\t(more skills coming soon!)\n";
     int skill_choice{};
     std::cin >> skill_choice;
@@ -35,6 +37,11 @@ int main() {
         }
         case 3: {
             Mining skill;
+            skill.calculate(more_xp);
+            break;
+        }
+        case 4: {
+            Prayer skill;
             skill.calculate(more_xp);
             break;
         }
