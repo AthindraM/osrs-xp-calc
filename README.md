@@ -7,12 +7,12 @@ A very simple CLI calculator for the MMORPG Old School Runescape.
 - Mining
 ### In development
 - Prayer
-### Coming Soon
 - Attack
 - Strength
 - Defense
 - Ranged
 - Magic
+### Coming Soon
 - Runecraft
 - Hitpoints
 - Crafting

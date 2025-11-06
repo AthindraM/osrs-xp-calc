@@ -3,6 +3,7 @@
 #include "../include/skills/firemaking.hpp"
 #include "../include/skills/mining.hpp"
 #include "../include/skills/prayer.hpp"
+#include "../include/skills/attack.hpp"
 
 int main() {
     std::cout <<
@@ -12,10 +13,11 @@ int main() {
 
     std::cout <<
             "What skill would you like to calculate?\n"
-            "\t[1] Woodcutting\n"
-            "\t[2] Firemaking\n"
-            "\t[3] Mining\n"
-            "\t[4] Prayer\n"
+            "\t[1] Woodcutting  |   [6] Strength\n"
+            "\t[2] Firemaking   |   [7] Defense\n"
+            "\t[3] Mining       |   [8] Ranged\n"
+            "\t[4] Prayer       |   [9] Magic\n"
+            "\t[5] Attack       |\n"
             "\t(more skills coming soon!)\n";
     int skill_choice{};
     std::cin >> skill_choice;
@@ -44,6 +46,10 @@ int main() {
             Prayer skill;
             skill.calculate(more_xp);
             break;
+        }
+        case 5: {
+            Attack skill;
+            skill.calculate(more_xp);
         }
         default:
             std::cout << "Not a valid skill choice!\n";
