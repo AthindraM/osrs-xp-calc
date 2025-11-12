@@ -1,7 +1,7 @@
 #ifndef OSRS_XP_CALC_ATTACK_HPP
 #define OSRS_XP_CALC_ATTACK_HPP
 
-class Attack {
+class Combat {
 private:
     const int DAMAGE{4};
 

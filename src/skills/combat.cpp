@@ -1,8 +1,8 @@
-#include "../../include/skills/attack.hpp"
+#include "../../include/skills/combat.hpp"
 #include <iostream>
 #include <cmath>
 
-void Attack::calculate(int xp) {
+void Combat::calculate(int xp) {
     int damage_needed = xp / DAMAGE;
 
     std::cout << "You would need to deal\n"

@@ -3,7 +3,7 @@
 #include "../include/skills/firemaking.hpp"
 #include "../include/skills/mining.hpp"
 #include "../include/skills/prayer.hpp"
-#include "../include/skills/attack.hpp"
+#include "../include/skills/combat.hpp"
 
 int main() {
     std::cout <<
@@ -48,7 +48,15 @@ int main() {
             break;
         }
         case 5: {
-            Attack skill;
+            Combat skill;
+            skill.calculate(more_xp);
+        }
+        case 6: {
+            Combat skill;
+            skill.calculate(more_xp);
+        }
+        case 7: {
+            Combat skill;
             skill.calculate(more_xp);
         }
         default:

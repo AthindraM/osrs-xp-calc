@@ -12,5 +12,5 @@ add_executable(OSRS_XP_Calc src/main.cpp
         include/skills/mining.hpp
         src/skills/prayer.cpp
         include/skills/prayer.hpp
-        src/skills/attack.cpp
-        include/skills/attack.hpp)
+        src/skills/combat.cpp
+        include/skills/combat.hpp)

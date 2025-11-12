@@ -11,8 +11,9 @@ A very simple CLI calculator for the MMORPG Old School Runescape.
 - Strength
 - Defense
 - Ranged
-- Magic
+
 ### Coming Soon
+- Magic
 - Runecraft
 - Hitpoints
 - Crafting
