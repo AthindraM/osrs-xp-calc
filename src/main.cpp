@@ -59,6 +59,10 @@ int main() {
             Combat skill;
             skill.calculate(more_xp);
         }
+        case 8: {
+            Combat skill;
+            skill.calculate(more_xp);
+        }
         default:
             std::cout << "Not a valid skill choice!\n";
             break;
