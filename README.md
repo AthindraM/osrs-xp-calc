@@ -5,13 +5,12 @@ A very simple CLI calculator for the MMORPG Old School Runescape.
 - Woodcutting
 - Firemaking
 - Mining
-### In development
 - Prayer
 - Attack
 - Strength
 - Defense
 - Ranged
-
+### In development
 ### Coming Soon
 - Magic
 - Runecraft
